@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<body>
+
+<style>
+  form  { display: table;      }
+  p     { display: table-row;  }
+  label { display: table-cell; }
+  input { display: table-cell; }
+</style>
+
+<header class="w3-container w3-theme w3-padding" id="myHeader">
+  <div class="w3-center">
+  <h4>For all your UT calculating needs</h4>
+  <h1 class="w3-xxxlarge w3-animate-bottom">Horse Isle UT Calculator</h1>
+  </div>
+</header>
+
+<body>
+
+<!-- Content will go here -->
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-bar-item">Tutorial</a>
+  <a onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-bar-item">Changelog</a>
+  <a onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-bar-item">Contact</a>
+</nav>
+
+<!-- Tutorial -->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-left">
+      <header class="w3-container w3-theme-l1"> 
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="w3-button w3-display-topright">×</span>
+        <h4>How to use UTCalc</h4>
+      </header>
+      <div class="w3-padding">
+        <p>First, f</p>
+        <p>Go to our <a class="w3-btn" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+      </div>
+      <footer class="w3-container w3-theme-l1">
+        <p>&nbsp</p>
+      </footer>
+    </div>
+</div>
+
+<!-- Changelog -->
+<div id="id02" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-theme-l1"> 
+        <span onclick="document.getElementById('id02').style.display='none'"
+        class="w3-button w3-display-topright">×</span>
+        <h4>Changelog</h4>
+      </header>
+      <div class="w3-padding">
+        <p>
+			<h4>15/07/2017</h4>
+			Created website, with support for some breeds
+		<p>
+      </div>
+      <footer class="w3-container w3-theme-l1">
+        <p>&nbsp</p>
+      </footer>
+    </div>
+</div>
+
+<!-- Contact -->
+<div id="id03" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-right">
+      <header class="w3-container w3-theme-l1"> 
+        <span onclick="document.getElementById('id03').style.display='none'"
+        class="w3-button w3-display-topright">×</span>
+        <h4>Contact us</h4>
+      </header>
+      <div class="w3-padding">
+        <p>For enquiries, please email us at</p>
+        <p><address>UTCalc@gmail.com</address></p>
+      </div>
+      <footer class="w3-container w3-theme-l1">
+        <p>&nbsp</p>
+      </footer>
+    </div>
+</div>
+
+<br>
+<div class="container" align="center">
+<form id="UTCalc" class="w3-container w3-card-4">
+  <br>
+  <p>  	
+	<label for="breed">Select Breed: </label>
+    <select id="breed" name="Select Breed" class="form-control">
+        <option value="1700">Sea Horse</option>
+        <option value="750">Saw Horse</option>
+    </select>
+  </p>
+  <br>
+  <p>
+  	<label for="b">Intelligence: </label>
+  	<input type="number" id="b" min="1" max = "1000" value="">
+  </p>
+  <br>
+  <p>
+  	<label for="a">Personality: </label>
+   	<input type="number" id="a" min="1" max = "1000" value="">
+  </p>
+  <br>
+  <p>
+  	<input type="button" value="Calculate UT" onmouseup="x.value=((parseInt(a.value)+parseInt(b.value))/parseInt(breed.value)*100).toFixed(2)">
+  </p>
+  <br>
+  <p>
+  	<label for="x"><strong>Horse UT: </strong></label>
+	<output name="x" for="a b">0.00</output>%
+  </p>
+  <br>
+</form>
+<br>
+<p><strong>Note:</strong> May not work in some browsers such as Internet Explorer</p>
+
+</div>
+
+
+</body>
+</html>
