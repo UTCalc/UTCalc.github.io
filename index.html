@@ -1,39 +1,50 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>HI UT Calc</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="http://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2015-01-13/e3a50bc1219be7290ab4838d157a9fbc.ico">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 <body>
 
-<style>
-  form  { display: table;      }
-  p     { display: table-row;  }
-  label { display: table-cell; }
-  input { display: table-cell; }
-</style>
+  <style>
+    form  { display: table;      }
+    p     { display: table-row;  }
+    label { display: table-cell; }
+    input { display: table-cell; }
+    #footer {
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     padding: 1rem;
+     background-color: #efefef;
+     text-align: center;
+     color:#778899 !important;
+   }
+ </style>
 
-<header class="w3-container w3-theme w3-padding" id="myHeader">
+ <header class="w3-container w3-theme w3-padding" id="myHeader">
   <div class="w3-center">
-  <h4>For all your UT calculating needs</h4>
-  <h1 class="w3-xxxlarge w3-animate-bottom">Horse Isle UT Calculator</h1>
+    <h4>For all your UT calculating needs</h4>
+    <h1 class="w3-xxxlarge w3-animate-bottom">Horse Isle UT Calculator</h1>
   </div>
 </header>
 
 <body>
 
-<!-- Content will go here -->
-<!-- Navigation -->
-<nav class="w3-bar w3-black">
-  <a onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-bar-item">Tutorial</a>
-  <a onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-bar-item">Changelog</a>
-  <a onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-bar-item">Contact</a>
-</nav>
+  <!-- Content will go here -->
+  <!-- Navigation -->
+  <nav class="w3-bar w3-black">
+    <a onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-bar-item">Tutorial</a>
+    <a onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-bar-item">Changelog</a>
+    <a onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-bar-item">Contact</a>
+  </nav>
 
-<!-- Tutorial -->
-<div id="id01" class="w3-modal">
+  <!-- Tutorial -->
+  <div id="id01" class="w3-modal">
     <div class="w3-modal-content w3-card-4 w3-animate-left">
       <header class="w3-container w3-theme-l1"> 
         <span onclick="document.getElementById('id01').style.display='none'"
@@ -41,17 +52,16 @@
         <h4>How to use UTCalc</h4>
       </header>
       <div class="w3-padding">
-        <p>First, f</p>
-        <p>Go to our <a class="w3-btn" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+        <p>Tutorial to come...</p>
       </div>
       <footer class="w3-container w3-theme-l1">
         <p>&nbsp</p>
       </footer>
     </div>
-</div>
+  </div>
 
-<!-- Changelog -->
-<div id="id02" class="w3-modal">
+  <!-- Changelog -->
+  <div id="id02" class="w3-modal">
     <div class="w3-modal-content w3-card-4 w3-animate-top">
       <header class="w3-container w3-theme-l1"> 
         <span onclick="document.getElementById('id02').style.display='none'"
@@ -60,71 +70,146 @@
       </header>
       <div class="w3-padding">
         <p>
-			<h4>15/07/2017</h4>
-			Created website, with support for some breeds
-		<p>
+          <h4>15/07/2017</h4>
+          Created website, with support for some: breeds A-Hanoverian so far
+          <p>
+          </div>
+          <footer class="w3-container w3-theme-l1">
+            <p>&nbsp</p>
+          </footer>
+        </div>
       </div>
-      <footer class="w3-container w3-theme-l1">
-        <p>&nbsp</p>
-      </footer>
-    </div>
-</div>
 
-<!-- Contact -->
-<div id="id03" class="w3-modal">
-    <div class="w3-modal-content w3-card-4 w3-animate-right">
-      <header class="w3-container w3-theme-l1"> 
-        <span onclick="document.getElementById('id03').style.display='none'"
-        class="w3-button w3-display-topright">×</span>
-        <h4>Contact us</h4>
-      </header>
-      <div class="w3-padding">
-        <p>For enquiries, please email us at</p>
-        <p><address>UTCalc@gmail.com</address></p>
+      <!-- Contact -->
+      <div id="id03" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-right">
+          <header class="w3-container w3-theme-l1"> 
+            <span onclick="document.getElementById('id03').style.display='none'"
+            class="w3-button w3-display-topright">×</span>
+            <h4>Contact us</h4>
+          </header>
+          <div class="w3-padding">
+            <p>For enquiries, please email us at</p>
+            <p><address>UTCalculate@gmail.com</address></p>
+          </div>
+          <footer class="w3-container w3-theme-l1">
+            <p>&nbsp</p>
+          </footer>
+        </div>
       </div>
-      <footer class="w3-container w3-theme-l1">
-        <p>&nbsp</p>
-      </footer>
-    </div>
-</div>
 
-<br>
-<div class="container" align="center">
-<form id="UTCalc" class="w3-container w3-card-4">
-  <br>
-  <p>  	
-	<label for="breed">Select Breed: </label>
-    <select id="breed" name="Select Breed" class="form-control">
-        <option value="1700">Sea Horse</option>
-        <option value="750">Saw Horse</option>
-    </select>
-  </p>
-  <br>
-  <p>
-  	<label for="b">Intelligence: </label>
-  	<input type="number" id="b" min="1" max = "1000" value="">
-  </p>
-  <br>
-  <p>
-  	<label for="a">Personality: </label>
-   	<input type="number" id="a" min="1" max = "1000" value="">
-  </p>
-  <br>
-  <p>
-  	<input type="button" value="Calculate UT" onmouseup="x.value=((parseInt(a.value)+parseInt(b.value))/parseInt(breed.value)*100).toFixed(2)">
-  </p>
-  <br>
-  <p>
-  	<label for="x"><strong>Horse UT: </strong></label>
-	<output name="x" for="a b">0.00</output>%
-  </p>
-  <br>
-</form>
-<br>
-<p><strong>Note:</strong> May not work in some browsers such as Internet Explorer</p>
+      <br>
+      <div class="container" align="center">
+        <form id="UTCalc" class="w3-container w3-card-4">
+          <br>
+          <p>   
+            <label for="breed">Select Breed: </label>
+            <select id="breed" name="Select Breed" class="form-control">
+              <option value="1600">Abaco Barb</option>
+              <option value="1500">Abtenauer</option>
+              <option value="1550">Akhal Teke</option>
+              <option value="1400">Alter Real</option>
+              <option value="1650">American Cream Draft</option>
+              <option value="1350">American Mustang</option>
+              <option value="1550">American Paint</option>
+              <option value="1650">American Saddlebred</option>
+              <option value="1550">American White</option>
+              <option value="1350">Andalusian</option>
+              <option value="1500">Anglo Arabian</option>
+              <option value="1500">Appaloosa</option>
+              <option value="1450">Appendix Quarter Horse</option>
+              <option value="1550">Arabian</option>
+              <option value="1350">Ardennias</option>
+              <option value="1600">Argentine Polo Pony</option>
+              <option value="1250">Australian Brumby</option>
+              <option value="1300">Australian Stock Horse</option>
+              <option value="1750">Azteca</option>
+              <option value="1450">Bashkir Curly</option>
+              <option value="1250">Belgian</option>
+              <option value="1550">Black Forest Draft Horse</option>
+              <option value="1450">British Appaloosa</option>
+              <option value="1850">British Spotted Pony</option>
+              <option value="1250">Budyonny</option>
+              <option value="1550">Calabrese</option>
+              <option value="1550">Camargue</option>
+              <option value="500">Camel</option>
+              <option value="1550">Campolina</option>
+              <option value="1650">Canadian Horse</option>
+              <option value="1300">Cape Boerperd</option>
+              <option value="1550">Carolina Marsh Tacky</option>
+              <option value="1450">Caspian</option>
+              <option value="1650">Chincoteague Pony</option>
+              <option value="1650">Cleveland Bay</option>
+              <option value="1450">Clydesdale</option>
+              <option value="1250">Colorado Ranger</option>
+              <option value="1650">Connemara Pony</option>
+              <option value="1650">Criollo</option>
+              <option value="1750">Cubano De Paso</option>
+              <option value="1600">Dales Pony</option>
+              <option value="1650">Danish Warmblood</option>
+              <option value="1450">Dartmoor Pony</option>
+              <option value="1550">Datong</option>
+              <option value="1400">Dole</option>
+              <option value="1500">Don</option>
+              <option value="1550">Dutch Tuigpaard</option>
+              <option value="1450">Dutch Warmblood</option>
+              <option value="1550">Egyptian Arabian</option>
+              <option value="1700">Eriskay</option>
+              <option value="1450">Estonian Native Horse</option>
+              <option value="1350">Exmoor Pony</option>
+              <option value="1550">Falabella</option>
+              <option value="1750">Fell Pony</option>
+              <option value="1350">Finnhorse</option>
+              <option value="1400">Florida Cracker</option>
+              <option value="1450">Franches Montagne</option>
+              <option value="1650">Frederiksborg</option>
+              <option value="1450">French Trotter</option>
+              <option value="1450">Friesian</option>
+              <option value="1300">Furioso</option>
+              <option value="1750">Galiceno</option>
+              <option value="1700">Gelderland</option>
+              <option value="1350">Georgian Grande</option>
+              <option value="1850">German Riding Pony</option>
+              <option value="1850">Gotland</option>
+              <option value="1500">Groningen</option>
+              <option value="1800">Guoxia Pony</option>
+              <option value="1600">Gypsy Vanner</option>
+              <option value="1250">Hackney Horse</option>
+              <option value="1450">Haflinger</option>
+              <option value="1600">Hanoverian</option>
+            </select>
+          </p>
+          <br>
+          <p>
+            <label for="b">Intelligence: </label>
+            <input type="number" id="b" min="1" max = "1000" value="">
+          </p>
+          <br>
+          <p>
+            <label for="a">Personality: </label>
+            <input type="number" id="a" min="1" max = "1000" value="">
+          </p>
+          <br>
+          <p>
+            <input type="button" value="Calculate UT" onmouseup="x.value=((parseInt(a.value)+parseInt(b.value))/parseInt(breed.value)*100).toFixed(2)">
+          </p>
+          <br>
+          <p>
+            <label for="x"><strong>Horse UT: </strong></label>
+            <output name="x" for="a b">0.00</output>%
+          </p>
+          <br>
+        </form>
+        <br>
+        <p><strong>Note:</strong> May not work in some browsers such as Internet Explorer</p>
 
-</div>
+      </div>
+      
+      <footer id="footer" class="w3-container w3-theme-dark w3-padding-16">
+        <h3>Created by Innox and Abyssinian</h3>
+        <p id="footertext">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+      </footer>	
 
 
-</body>
-</html>
+    </body>
+    </html>
