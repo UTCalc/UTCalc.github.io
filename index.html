@@ -14,8 +14,8 @@
     p     { display: table-row;  }
     label { display: table-cell; }
     input { display: table-cell; }
+	.container { min-height: calc(100vh - 70px); }
     #footer {
-     position: absolute;
      right: 0;
      bottom: 0;
      left: 0;
@@ -23,6 +23,7 @@
      background-color: #efefef;
      text-align: center;
      color:#778899 !important;
+	 height: 100px !important; 
    }
  </style>
  <script>
@@ -46,7 +47,6 @@
 
 <body>
 
-  <!-- Content will go here -->
   <!-- Navigation -->
   <nav class="w3-bar w3-black">
     <a onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-bar-item">Tutorial</a>
@@ -82,7 +82,8 @@
       <div class="w3-padding">
         <p>
           <h4>15/07/2017</h4>
-          Created website, with support for some breeds: A-Hanoverian so far
+          Created website, with support for some breeds: A-Hanoverian so far<br>
+		  Fixed mobile issues with footer covering page
           <p>
           </div>
           <footer class="w3-container w3-theme-l1">
