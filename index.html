@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <style>
     form  { display: table;      }
     p     { display: table-row;  }
@@ -27,8 +28,27 @@
      color:#778899 !important;
      height: 100px !important; 
    }
+   #Pegasus {
+		position: absolute; left: -1000px
+   }
  
 </style>
+<script>
+	function peg(){
+		var zoomed = false;
+		var img = $("#Pegasus"),
+        width = img.get(0).width,
+        screenWidth = $(window).width(),
+        duration = 2000;
+		if(breed.value == 2000){
+			
+			img.css("left", -width).animate({
+            "left": screenWidth
+			}, duration, peg);
+			zoomed = true;
+		}
+	}
+</script>
     <script>
   (function(i,s,o,g,r,a,m){i[&amp;#39;GoogleAnalyticsObject&amp;#39;]=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -124,7 +144,7 @@
         <br />
         <p>
         <label for="breed">Select Breed:</label> 
-        <select id="breed" name="Select Breed" class="form-control">
+        <select id="breed" name="Select Breed" class="form-control" onchange="peg()">
           <option value="1600">Abaco Barb</option>
           <option value="1500">Abtenauer</option>
           <option value="1550">Akhal Teke</option>
@@ -241,7 +261,7 @@
           <option value="1450">Nonius</option>
           <option value="1600">Noriker</option>
           <option value="1450">Norman Cob</option>
-          <option value="1550">Norwegian Coldblood Trotter</option>
+          <option value="1500">Norwegian Coldblood Trotter</option>
           <option value="1350">Norwegian Fjord</option>
           <option value="1350">Oldenburg</option>
           <option value="1350">Orlov Trotter</option>
@@ -265,7 +285,7 @@
           <option value="1550">Sorraia</option>
           <option value="1350">Spanish Barb</option>
           <option value="1650">Spotted Draft Horse</option>
-          <option value="1250">Standardbreed</option>
+          <option value="1250">Standardbred</option>
           <option value="1250">Suffolk Punch</option>
           <option value="1350">Sugarbush Draft Horse</option>
           <option value="1450">Swedish Warmblood</option>
@@ -312,7 +332,10 @@
       <br />
       <p>
       <strong>Note:</strong> May not work in some browsers such as Internet Explorer</p>
-    </div>
+	  <div>
+		<img id="Pegasus" src="http://i.imgur.com/CkRkQWO.png" />
+	  </div>
+	</div>
     <footer id="footer" class="w3-container w3-theme-dark w3-padding-16">
       <h3>Created by Innox and Abyssinian</h3>
       <p id="footertext">Powered by 
