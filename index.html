@@ -50,16 +50,15 @@
     </header>
     <!-- Navigation -->
     <nav class="w3-bar w3-black">
-    <a onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;block&#39;" class="w3-button w3-bar-item">Tutorial</a> 
-    <a onclick="document.getElementById(&#39;id02&#39;).style.display=&#39;block&#39;" class="w3-button w3-bar-item">Changelog</a> 
-    <a onclick="document.getElementById(&#39;id03&#39;).style.display=&#39;block&#39;"
-    class="w3-button w3-bar-item">Contact</a></nav>
+    <a onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-bar-item">Tutorial</a> 
+    <a onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-bar-item">Changelog</a> 
+    <a onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-bar-item">Contact</a> 
+    <a onclick="document.getElementById('id04').style.display='block'" class="w3-button w3-bar-item">Thanks</a></nav>
     <!-- Tutorial -->
     <div id="id01" class="w3-modal">
       <div class="w3-modal-content w3-card-4 w3-animate-left">
         <header class="w3-container w3-theme-l1">
-          <span onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;none&#39;"
-          class="w3-button w3-display-topright">×</span>
+          <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">×</span>
           <h4>How to use UTCalc</h4>
         </header>
         <div class="w3-padding">
@@ -74,14 +73,14 @@
     <div id="id02" class="w3-modal">
       <div class="w3-modal-content w3-card-4 w3-animate-top">
         <header class="w3-container w3-theme-l1">
-          <span onclick="document.getElementById(&#39;id02&#39;).style.display=&#39;none&#39;"
-          class="w3-button w3-display-topright">×</span>
+          <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">×</span>
           <h4>Changelog</h4>
         </header>
         <div class="w3-padding">
         <h4>15/07/2017</h4>Created website, with support for some breeds: A-Hanoverian so far
-        <br />Fixed mobile issues with footer covering page<br />
-		<h4>18/07/2017</h4>Added support for all current Horse Islle breeds</div>
+        <br />Fixed mobile issues with footer covering page
+        <br />
+        <h4>18/07/2017</h4>Added support for all current Horse Isle breeds</div>
         <footer class="w3-container w3-theme-l1">
           <p>&nbsp;</p>
         </footer>
@@ -91,13 +90,28 @@
     <div id="id03" class="w3-modal">
       <div class="w3-modal-content w3-card-4 w3-animate-right">
         <header class="w3-container w3-theme-l1">
-          <span onclick="document.getElementById(&#39;id03&#39;).style.display=&#39;none&#39;"
-          class="w3-button w3-display-topright">×</span>
+          <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">×</span>
           <h4>Contact us</h4>
         </header>
         <div class="w3-padding">
           <p>For enquiries, please email us at</p>
           <address>UTCalculate@gmail.com</address>
+        </div>
+        <footer class="w3-container w3-theme-l1">
+          <p>&nbsp;</p>
+        </footer>
+      </div>
+    </div>
+    <div id="id04" class="w3-modal">
+      <div class="w3-modal-content w3-card-4 w3-animate-bottom">
+        <header class="w3-container w3-theme-l1">
+          <span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-display-topright">×</span>
+          <h4>Thanks</h4>
+        </header>
+        <div class="w3-padding">
+          <h4>Thanks to...</h4>
+		  <h5>Abyssinian</h5>
+		  <p>(Testers to be added here)</b>
         </div>
         <footer class="w3-container w3-theme-l1">
           <p>&nbsp;</p>
@@ -237,7 +251,7 @@
           <option value="1650">Peruvian Paso</option>
           <option value="1350">Plateau Persian</option>
           <option value="1350">Pony of the Americas</option>
-          <option value="1350">Przewalski&#39;s Horse</option>
+          <option value="1350">Przewalski's Horse</option>
           <option value="1450">Quarter Horse</option>
           <option value="1600">Racking Horse</option>
           <option value="1500">Rocky Mountain Horse</option>
